@@ -7,6 +7,7 @@
 //
 
 #import "NDViewController.h"
+#import "NDUserData.h"
 
 @interface NDViewController ()
 
@@ -18,6 +19,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.nameLabel.text = [self.users objectForKey:USERNAME];
+    self.emailLabel.text = [self.users objectForKey:EMAIL];
+    self.ageLabel.text = [NSString stringWithFormat:@"Age %@", [self.users objectForKey:AGE]];
 }
 
 - (void)didReceiveMemoryWarning

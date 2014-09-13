@@ -10,4 +10,10 @@
 
 @interface NDViewController : UIViewController
 
+@property (strong, nonatomic) NSDictionary *users;
+
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *emailLabel;
+@property (strong, nonatomic) IBOutlet UILabel *ageLabel;
+
 @end
