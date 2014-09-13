@@ -28,6 +28,7 @@
 		159DD81519C32B6800679EF7 /* cecelia12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 159DD81419C32B6800679EF7 /* cecelia12.jpg */; };
 		159DD8EE19C469ED00679EF7 /* NDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159DD8ED19C469ED00679EF7 /* NDTableViewController.m */; };
 		159DD8F119C46EA800679EF7 /* NDScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 159DD8F019C46EA800679EF7 /* NDScrollView.m */; };
+		159DD8F619C4790000679EF7 /* NDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 159DD8F519C4790000679EF7 /* NDUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		159DD8ED19C469ED00679EF7 /* NDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTableViewController.m; sourceTree = "<group>"; };
 		159DD8EF19C46EA800679EF7 /* NDScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDScrollView.h; sourceTree = "<group>"; };
 		159DD8F019C46EA800679EF7 /* NDScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDScrollView.m; sourceTree = "<group>"; };
+		159DD8F419C4790000679EF7 /* NDUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDUser.h; sourceTree = "<group>"; };
+		159DD8F519C4790000679EF7 /* NDUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +181,8 @@
 			children = (
 				159DD80B19C3201600679EF7 /* NDUserData.h */,
 				159DD80C19C3201600679EF7 /* NDUserData.m */,
+				159DD8F419C4790000679EF7 /* NDUser.h */,
+				159DD8F519C4790000679EF7 /* NDUser.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 				159DD80D19C3201600679EF7 /* NDUserData.m in Sources */,
 				159DD8EE19C469ED00679EF7 /* NDTableViewController.m in Sources */,
 				159DD7E319C31FEE00679EF7 /* main.m in Sources */,
+				159DD8F619C4790000679EF7 /* NDUser.m in Sources */,
 				159DD8F119C46EA800679EF7 /* NDScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

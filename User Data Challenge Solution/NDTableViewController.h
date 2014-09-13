@@ -10,6 +10,6 @@
 
 @interface NDTableViewController : UITableViewController
 
-@property (strong, nonatomic) NSArray *users;
+@property (strong, nonatomic) NSMutableArray *users;
 
 @end

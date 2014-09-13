@@ -9,6 +9,7 @@
 #import "NDTableViewController.h"
 #import "NDUserData.h"
 #import "NDViewController.h"
+#import "NDUser.h"
 
 @interface NDTableViewController ()
 
@@ -35,7 +36,12 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.users = [NDUserData users];
+    self.users = [[NSMutableArray alloc] init];
+    
+    for (NSDictionary *users in [NDUserData users]) {
+        NDUser *user = [[NDUser alloc] initWithData:users];
+        [self.users addObject:user];
+    }
     
 }
 
@@ -66,14 +72,12 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
     
-    NSString *username = [[self.users objectAtIndex:indexPath.row] objectForKey:USERNAME];
-    cell.textLabel.text = username;
+    NDUser *user = [self.users objectAtIndex:indexPath.row];
+    cell.textLabel.text = user.username;
     
-    UIImage *profilePicture = [[self.users objectAtIndex:indexPath.row] objectForKey:PROFILE_PICTURE];
-    cell.imageView.image = profilePicture;
+    cell.imageView.image = user.profilePicture;
     
-    cell.detailTextLabel.text = [[self.users objectAtIndex:indexPath.row] objectForKey:EMAIL];
-    
+    cell.detailTextLabel.text = user.email;
     
     return cell;
 }
@@ -85,7 +89,7 @@
             NDViewController *nextViewController = segue.destinationViewController;
             NSIndexPath *path = [self.tableView indexPathForCell:sender];
             NSDictionary *selectedUser = [self.users objectAtIndex:path.row];
-            nextViewController.users = selectedUser;
+            nextViewController.user = selectedUser;
         }
     }
 }

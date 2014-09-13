@@ -19,9 +19,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.nameLabel.text = [self.users objectForKey:USERNAME];
-    self.emailLabel.text = [self.users objectForKey:EMAIL];
-    self.ageLabel.text = [NSString stringWithFormat:@"Age %@", [self.users objectForKey:AGE]];
+    self.nameLabel.text = self.user.username;
+    self.emailLabel.text = self.user.email;
+    self.ageLabel.text = [NSString stringWithFormat:@"Age %@", self.user.age];
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NDUser.h"
 
 @interface NDViewController : UIViewController
 
-@property (strong, nonatomic) NSDictionary *users;
+@property (strong, nonatomic) NDUser *user;
 
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *emailLabel;
