@@ -45,6 +45,18 @@
     
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([sender isKindOfClass:[UITableViewCell class]]) {
+        if ([segue.destinationViewController isKindOfClass:[NDViewController class]]) {
+            NDViewController *nextViewController = segue.destinationViewController;
+            NSIndexPath *path = [self.tableView indexPathForCell:sender];
+            NDUser *selectedUser = [self.users objectAtIndex:path.row];
+            nextViewController.user = selectedUser;
+        }
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -82,17 +94,6 @@
     return cell;
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([sender isKindOfClass:[UITableViewCell class]]) {
-        if ([segue.destinationViewController isKindOfClass:[NDViewController class]]) {
-            NDViewController *nextViewController = segue.destinationViewController;
-            NSIndexPath *path = [self.tableView indexPathForCell:sender];
-            NSDictionary *selectedUser = [self.users objectAtIndex:path.row];
-            nextViewController.user = selectedUser;
-        }
-    }
-}
 
 
 /*

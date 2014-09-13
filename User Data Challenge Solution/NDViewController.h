@@ -9,12 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "NDUser.h"
 
-@interface NDViewController : UIViewController
+@interface NDViewController : UIViewController <UIScrollViewDelegate>
 
 @property (strong, nonatomic) NDUser *user;
 
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *emailLabel;
 @property (strong, nonatomic) IBOutlet UILabel *ageLabel;
+
+@property (strong,nonatomic) UIScrollView *scrollView;
+@property (strong, nonatomic) UIImageView *imageView;
 
 @end

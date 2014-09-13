@@ -27,7 +27,6 @@
 		159DD81319C3270B00679EF7 /* janelu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 159DD81219C3270B00679EF7 /* janelu.jpg */; };
 		159DD81519C32B6800679EF7 /* cecelia12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 159DD81419C32B6800679EF7 /* cecelia12.jpg */; };
 		159DD8EE19C469ED00679EF7 /* NDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159DD8ED19C469ED00679EF7 /* NDTableViewController.m */; };
-		159DD8F119C46EA800679EF7 /* NDScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 159DD8F019C46EA800679EF7 /* NDScrollView.m */; };
 		159DD8F619C4790000679EF7 /* NDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 159DD8F519C4790000679EF7 /* NDUser.m */; };
 /* End PBXBuildFile section */
 
@@ -69,8 +68,6 @@
 		159DD81419C32B6800679EF7 /* cecelia12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cecelia12.jpg; sourceTree = "<group>"; };
 		159DD8EC19C469ED00679EF7 /* NDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTableViewController.h; sourceTree = "<group>"; };
 		159DD8ED19C469ED00679EF7 /* NDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTableViewController.m; sourceTree = "<group>"; };
-		159DD8EF19C46EA800679EF7 /* NDScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDScrollView.h; sourceTree = "<group>"; };
-		159DD8F019C46EA800679EF7 /* NDScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDScrollView.m; sourceTree = "<group>"; };
 		159DD8F419C4790000679EF7 /* NDUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDUser.h; sourceTree = "<group>"; };
 		159DD8F519C4790000679EF7 /* NDUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,8 +199,6 @@
 			children = (
 				159DD7EB19C31FEE00679EF7 /* NDViewController.h */,
 				159DD7EC19C31FEE00679EF7 /* NDViewController.m */,
-				159DD8EF19C46EA800679EF7 /* NDScrollView.h */,
-				159DD8F019C46EA800679EF7 /* NDScrollView.m */,
 			);
 			name = Details;
 			sourceTree = "<group>";
@@ -316,7 +311,6 @@
 				159DD8EE19C469ED00679EF7 /* NDTableViewController.m in Sources */,
 				159DD7E319C31FEE00679EF7 /* main.m in Sources */,
 				159DD8F619C4790000679EF7 /* NDUser.m in Sources */,
-				159DD8F119C46EA800679EF7 /* NDScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
